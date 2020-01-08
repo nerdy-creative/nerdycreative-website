@@ -1,0 +1,82 @@
+// HEADER STYLE
+#header {
+
+    // Homepage
+    &-home{
+        height: 100vh;
+        background-color: #fff;
+
+        .scroll {
+            position: absolute;
+            margin-top: 150px;
+            display: flex;
+
+            p {
+                text-transform: uppercase;
+                font-size: 13px;
+                letter-spacing: 1px;
+                color: #141414;
+                margin: auto;
+            }
+
+            .circle {
+                @include small-circle;  
+                margin-right: 15px;              
+            }
+        }
+
+        .logo-circle {
+            
+            &-small {
+                @include logo-circle;
+                width: 453px;
+                height: 453px;
+                top: -223px;
+                left: -176px;
+                background-color: $primary-color; 
+            }
+
+            &-big {
+                @include logo-circle;
+                width: 1250px;
+                top: -624px;
+                left: -597px;
+                height: 1250px;
+                border: solid 1px rgba(16, 16, 16, 0.1);
+            }
+        }
+
+        // Logo 
+        .header-logo {
+            position: absolute;
+            top: 90px;
+        }
+
+        .header-content {
+            vertical-align: middle;
+            height: 100vh;
+            display: table-cell;
+
+            & > p {
+                //font-family: $custom-font;
+                font-size: 101px;
+                font-weight: bold;
+                line-height: 1.14;
+                letter-spacing: 1px;
+                color: $primary-color;
+
+                .company-name {
+                    -webkit-text-stroke: 1px $primary-color;
+                    letter-spacing: 3px;
+                    color: rgba(255, 255, 255, 0);
+                }
+
+                .outlined-dot {
+                    @include outlined-dot;
+                    -webkit-text-stroke-width: 3px;
+                    font-size: 70px;
+                }
+            }
+        }
+    }
+}

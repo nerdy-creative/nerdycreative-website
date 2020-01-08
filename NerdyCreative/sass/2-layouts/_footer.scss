@@ -1,0 +1,31 @@
+// FOOTER STYLE
+footer {
+    padding: 150px 0;
+
+    .menu-title {
+        font-size: 19px;
+        line-height: 19px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: $primary-color;
+    }
+
+    ul {
+        padding-top: 75px;
+
+        li {
+            font-size: 17px;
+            line-height: 17px;
+            color: $dark-color;
+            
+            &:not(:last-of-type) {
+                margin-bottom: 30px;
+            }
+        }
+
+        &.contact li:last-of-type {
+            color: rgba(16, 16, 16, 0.5);
+        }
+
+    }
+}

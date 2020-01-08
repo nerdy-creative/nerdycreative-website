@@ -1,0 +1,169 @@
+// BASE STYLE
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+*,
+*::after,
+*::before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: '', sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #FFFFFF;
+    background: $primary-color;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
+footer {
+    background-color: #fff;
+}
+
+ul.unstyled {
+    list-style: none;
+}
+
+// Mixins 
+@mixin outlined-dot {
+    -webkit-text-stroke-color: $secondary-color;
+    font-family: $custom-font;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0);
+}
+
+@mixin logo-circle {
+    position: absolute;
+    border-radius: 50%;
+}
+
+@mixin small-circle {
+    width: 35px;
+    height: 35px;
+    background-color: $secondary-color;
+    border-radius: 50%;
+}
+
+@mixin title {
+    font-size: 81px;
+    font-weight: bold;
+    line-height: 1.05;
+    color: $secondary-color;
+}
+
+@mixin title-subtext {
+    font-size: 23px;
+    color: #fff;
+    line-height: 23px;
+}
+
+@mixin title-section {
+    .title {
+        @include title;
+    }
+
+    p {
+        @include title-subtext;
+    }
+
+    a {
+        @include title-subtext;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
