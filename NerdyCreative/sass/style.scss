@@ -79,7 +79,7 @@
         }
 
         &:nth-child(even) .container-holder {
-            margin-right: 7px;
+            margin-left: 7px;
         }
 
         &:not(:last-of-type) {
@@ -89,21 +89,23 @@
         .container-holder {
             height: 535px;
             position: relative;
-    
-            .image-holder {
+
+            .grid__item-img {
+                width: 100%;
                 height: 100%;
-    
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
+                background-position: 50% 50%;
+                background-size: cover;
+            }
+            
+            .grid__item-img--blur {
+                filter: blur(6px);
             }
     
             .content {
                 bottom: 215px;
                 position: absolute;
                 padding-left: 60px;
+                width: max-content;
     
                 p {
                     font-size: 23px;

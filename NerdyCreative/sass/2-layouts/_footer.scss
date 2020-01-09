@@ -14,12 +14,18 @@ footer {
         padding-top: 75px;
 
         li {
-            font-size: 17px;
-            line-height: 17px;
-            color: $dark-color;
-            
+            @include footer-elements;
+
             &:not(:last-of-type) {
                 margin-bottom: 30px;
+            }
+
+            a {
+                @include footer-elements;
+
+                &:hover {
+                    @include footer-elements;
+                }
             }
         }
 

@@ -32,7 +32,7 @@
                         <a href="#">About us</a>
                     </li>
                     <li>
-                        <a href="#">Portfolio</a>
+                        <a href="#">Our work</a>
                     </li>
                     <li>
                         <a href="#">Contact</a>
@@ -110,8 +110,6 @@
                 </div>
                 
             </div><!-- .swiper-wrapper -->
-            <!-- <div class="swiper-scrollbar js-swiper-scrollbar"></div>
-            <div class="swiper-scrollbar swiper-scrollbar-2"><div class="swiper-scrollbar-drag"></div></div> -->
         </div><!-- .swiper-container -->
         <div class="divider"></div>
         <div class="circle-half"></div>
@@ -120,13 +118,11 @@
     <section id="our-work">
         <div class="container">
             <div class="row">
-
+                
                 <div class="col-md-6">
                     <div class="container-holder">
-                        <a href="#">
-                            <div class="image-holder">
-                                <img src="img/cs_h_img_3.jpg" alt="">
-                            </div>
+                        <a href="#" class="grid__item">
+                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
                             <div class="content">
                                 <p>Development</p>
                                 <h4>e-Payment</h4>
@@ -137,10 +133,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="container-holder">
-                        <a href="#">
-                            <div class="image-holder">
-                                <img src="img/cs_h_img_3.jpg" alt="">
-                            </div>
+                        <a href="#" class="grid__item">
+                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
                             <div class="content">
                                 <p>Development</p>
                                 <h4>e-Payment</h4>
@@ -151,10 +145,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="container-holder">
-                        <a href="#">
-                            <div class="image-holder">
-                                <img src="img/cs_h_img_3.jpg" alt="">
-                            </div>
+                        <a href="#" class="grid__item">
+                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
                             <div class="content">
                                 <p>Development</p>
                                 <h4>e-Payment</h4>
@@ -165,10 +157,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="container-holder">
-                        <a href="#">
-                            <div class="image-holder">
-                                <img src="img/cs_h_img_3.jpg" alt="">
-                            </div>
+                        <a href="#" class="grid__item">
+                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
                             <div class="content">
                                 <p>Development</p>
                                 <h4>e-Payment</h4>
@@ -187,10 +177,8 @@
                 </div>
                 <div class="col-md-6">
                     <div class="container-holder">
-                        <a href="#">
-                            <div class="image-holder">
-                                <img src="img/cs_h_img_3.jpg" alt="">
-                            </div>
+                        <a href="#" class="grid__item">
+                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
                             <div class="content">
                                 <p>Development</p>
                                 <h4>e-Payment</h4>
@@ -211,18 +199,18 @@
                 <div class="col-md-4">
                     <p class="menu-title">Menu</p>
                     <ul class="unstyled">
-                        <li>Capabilities</li>
-                        <li>Our work</li>
-                        <li>About us</li>
-                        <li>Contact</li>
+                        <li><a href="#">Capabilities</a></li>
+                        <li><a href="#">Our work</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
                     <p class="menu-title">Social</p>
                     <ul class="unstyled">
-                        <li>Facebook</li>
-                        <li>Instagram</li>
-                        <li>Linkedin</li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Linkedin</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">
@@ -237,7 +225,11 @@
             </div>
         </div>
     </footer>
-    
+
+    <!-- BLUR Effect -->
+    <script src="js/nearby.js"></script>
+    <script src="js/site.js"></script>
+
     <!-- jQUERY -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- POPPER CORE JavaScript -->
@@ -252,16 +244,6 @@
                 $('#sidebar').toggleClass('active');
             });
 
-            // var swiper = new Swiper(".swiper-container", {
-            //     loopedSlides: 8,
-            //     loop: false,
-            //     slidesPerView: "auto",
-            //     freeMode: true,
-            //     mousewheel: {
-            //         releaseOnEdges: true,
-            //     },
-            // });
-
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 4,
                 centeredSlides: true,
@@ -271,11 +253,6 @@
                 mousewheel: {
                     releaseOnEdges: true,
                 },
-                // scrollbar: {
-                //     el: '.swiper-scrollbar',
-                //     draggable: true,
-                //     snapOnRelease: false
-                // }
             });
 
         });

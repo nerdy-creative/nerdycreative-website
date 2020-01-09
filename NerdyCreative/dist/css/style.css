@@ -216,6 +216,14 @@ footer {
       color: #101010; }
       footer ul li:not(:last-of-type) {
         margin-bottom: 30px; }
+      footer ul li a {
+        font-size: 17px;
+        line-height: 17px;
+        color: #101010; }
+        footer ul li a:hover {
+          font-size: 17px;
+          line-height: 17px;
+          color: #101010; }
     footer ul.contact li:last-of-type {
       color: rgba(16, 16, 16, 0.5); }
 
@@ -283,22 +291,24 @@ footer {
   #our-work div[class^="col-"]:nth-child(odd) .container-holder {
     margin-right: 7px; }
   #our-work div[class^="col-"]:nth-child(even) .container-holder {
-    margin-right: 7px; }
+    margin-left: 7px; }
   #our-work div[class^="col-"]:not(:last-of-type) {
     margin-bottom: 45px; }
   #our-work div[class^="col-"] .container-holder {
     height: 535px;
     position: relative; }
-    #our-work div[class^="col-"] .container-holder .image-holder {
-      height: 100%; }
-      #our-work div[class^="col-"] .container-holder .image-holder img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover; }
+    #our-work div[class^="col-"] .container-holder .grid__item-img {
+      width: 100%;
+      height: 100%;
+      background-position: 50% 50%;
+      background-size: cover; }
+    #our-work div[class^="col-"] .container-holder .grid__item-img--blur {
+      filter: blur(6px); }
     #our-work div[class^="col-"] .container-holder .content {
       bottom: 215px;
       position: absolute;
-      padding-left: 60px; }
+      padding-left: 60px;
+      width: max-content; }
       #our-work div[class^="col-"] .container-holder .content p {
         font-size: 23px;
         color: rgba(255, 255, 255, 0.7); }

@@ -167,3 +167,8 @@ ul.unstyled {
     }
 }
 
+@mixin footer-elements {
+    font-size: 17px;
+    line-height: 17px;
+    color: $dark-color;
+}
