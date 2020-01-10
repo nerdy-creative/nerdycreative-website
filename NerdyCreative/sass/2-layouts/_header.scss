@@ -23,6 +23,12 @@
                 @include small-circle;  
                 margin-right: 15px;              
             }
+            
+            .arrow {
+                @include arrow-black;
+                top: -17px;
+                left: 14px;
+            }
         }
 
         .logo-circle {

@@ -112,10 +112,6 @@ footer {
     background-color: #fff;
 }
 
-ul.unstyled {
-    list-style: none;
-}
-
 // Mixins 
 @mixin outlined-dot {
     -webkit-text-stroke-color: $secondary-color;
@@ -132,8 +128,21 @@ ul.unstyled {
 @mixin small-circle {
     width: 35px;
     height: 35px;
-    background-color: $secondary-color;
-    border-radius: 50%;
+    background: url("../icons/box.svg") no-repeat;
+}
+
+@mixin arrow-white {
+    width: 38px;
+    height: 10px;
+    position: absolute;
+    background: url("../icons/arrow.svg") no-repeat;
+}
+
+@mixin arrow-black {
+    width: 10px;
+    height: 38px;
+    position: absolute;
+    background: url("../icons/arrow-black.svg") no-repeat;
 }
 
 @mixin title {

@@ -121,11 +121,16 @@
             }
     
             .circle {
-                @include small-circle;
+                @include small-circle;    
                 bottom: 60px;
                 right: 60px;
-                position: absolute;
-                
+                position: absolute;          
+            }
+
+            .arrow {
+                @include arrow-white;
+                bottom: 70px;
+                right: 75px;
             }
     
             .title-section {
@@ -141,3 +146,17 @@
         }
     }
 }
+
+
+.midnightHeader.black {
+    filter: invert(0%);
+}
+
+.midnightHeader.white {
+    filter: invert(100%)
+}
+
+// .sidebarCollapse.blue {
+//     background: blue;
+//     color: white;
+// }

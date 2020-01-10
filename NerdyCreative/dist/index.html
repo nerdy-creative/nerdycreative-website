@@ -19,217 +19,238 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body id="body-home">
-    <header id="header-home">
-        <div class="wrapper" id="sidebar-wrapper">
-            <!-- Sidebar -->
-            <nav id="sidebar" class="active">    
-                <ul class="list-unstyled components">
-                    <li class="active">
-                        <a href="#">Home</a>
-                    </li>
-                    <li>
-                        <a href="#">About us</a>
-                    </li>
-                    <li>
-                        <a href="#">Our work</a>
-                    </li>
-                    <li>
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
+<body id="body-home vh-element" data-props="padding-top,padding-bottom" data-values="45,45">
+    <div class="wrapper" id="sidebar-wrapper">
+        <!-- Sidebar -->
+        <nav id="sidebar" class="closed">    
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About us</a>
+                </li>
+                <li>
+                    <a href="#">Our work</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </nav>
+        <div id="content">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info"></button>
+                </div>
             </nav>
-            <div id="content">
-                <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid">
-                        <button type="button" id="sidebarCollapse" class="btn btn-info">
-                            <i class="fas fa-align-left"></i>
-                        </button>
-                    </div>
-                </nav>
-            </div><!-- #sidebar -->
-        </div><!-- .wrapper#sidebar-wrapper -->
+        </div><!-- #sidebar -->
+    </div><!-- .wrapper#sidebar-wrapper -->
+    <div id="luxy">
         
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="logo-circle-small"></div>
-                    <div class="logo-circle-big"></div>
-                    <div class="header-logo">
-                        <img src="img/cs_i_emailaddress.png" alt="logo" class="logo">
-                    </div> 
-                    <div class="header-content">
-                        <p>Hello, we’re <span class="company-name">nerdy</span> digital design & dev agency<span class="outlined-dot">.</span></p>
-                        <div class="scroll">
-                            <div class="circle"></div>
-                            <p>Scroll as a geek</p>
+        <header id="header-home" data-midnight="black">
+            
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="logo-circle-small"></div>
+                        <div class="logo-circle-big"></div>
+                        <div class="header-logo">
+                            <img src="icons/logo.svg" alt="logo" class="logo">
+                        </div> 
+                        <div class="header-content">
+                            <p>Hello, we’re <span class="company-name">nerdy</span> digital design & dev agency<span class="outlined-dot">.</span></p>
+                            <div class="scroll">
+                                <div class="circle"></div>
+                                <div class="arrow"></div>
+                                <p>Scroll as a geek</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </header> 
-    
-    <section id="capabilities-section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-10 offset-md-1">
-                    <div class="title-section">
-                        <p>What our geek team does /</p>
-                        <h2 class="title">Capabilities</h2>
-                    </div>
-                </div><!-- .col-md-10.offset-md-1 -->
-            </div><!-- .row -->
-        </div><!-- .container -->
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                    <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
-                    <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
-                </div>
-                <div class="swiper-slide">
-                    <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
-                    <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
-                </div>
-                <div class="swiper-slide">
-                    <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
-                    <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
-                </div>
-                <div class="swiper-slide">
-                    <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
-                    <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
-                </div>
-                <div class="swiper-slide">
-                    <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
-                    <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
-                </div>
-                <div class="swiper-slide">
-                    <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
-                    <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
-                </div>
-                
-            </div><!-- .swiper-wrapper -->
-        </div><!-- .swiper-container -->
-        <div class="divider"></div>
-        <div class="circle-half"></div>
-    </section><!-- #capabilities-section -->
-
-    <section id="our-work">
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-6">
-                    <div class="container-holder">
-                        <a href="#" class="grid__item">
-                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
-                            <div class="content">
-                                <p>Development</p>
-                                <h4>e-Payment</h4>
-                            </div>
-                            <div class="circle"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="container-holder">
-                        <a href="#" class="grid__item">
-                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
-                            <div class="content">
-                                <p>Development</p>
-                                <h4>e-Payment</h4>
-                            </div>
-                            <div class="circle"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="container-holder">
-                        <a href="#" class="grid__item">
-                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
-                            <div class="content">
-                                <p>Development</p>
-                                <h4>e-Payment</h4>
-                            </div>
-                            <div class="circle"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="container-holder">
-                        <a href="#" class="grid__item">
-                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
-                            <div class="content">
-                                <p>Development</p>
-                                <h4>e-Payment</h4>
-                            </div>
-                            <div class="circle"></div>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-md-6 visit">
-                    <div class="container-holder">
+        </header> 
+        
+        <section id="capabilities-section" data-midnight="white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
                         <div class="title-section">
-                            <h2 class="title">Hmmm...</h2>
-                            <a href="#">Visit our work /</a>
+                            <p>What our geek team does /</p>
+                            <h2 class="title">Capabilities</h2>
+                        </div>
+                    </div><!-- .col-md-10.offset-md-1 -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    
+                    <div class="swiper-slide">
+                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
+                    </div>
+                    
+                </div><!-- .swiper-wrapper -->
+            </div><!-- .swiper-container -->
+            <div class="divider"></div>
+            <div class="circle-half"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="rangeslider"> 
+                            <input type="range" min="1" max="100" value="10" class="myslider" id="sliderRange"> 
+                            <p>Value: <span id="demo"></span></p> 
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- #capabilities-section -->
+
+        <section id="our-work" data-midnight="white">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-6">
+                        <div class="container-holder">
+                            <a href="#" class="grid__item">
+                                <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/img.png)"></div>
+                                <div class="content">
+                                    <p>Development</p>
+                                    <h4>e-Payment</h4>
+                                </div>
+                                <div class="circle"></div>
+                                <div class="arrow"></div>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="container-holder">
-                        <a href="#" class="grid__item">
-                            <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/cs_h_img_3.jpg)"></div>
-                            <div class="content">
-                                <p>Development</p>
-                                <h4>e-Payment</h4>
-                            </div>
-                            <div class="circle"></div>
-                        </a>
+                    <div class="col-md-6">
+                        <div class="container-holder">
+                            <a href="#" class="grid__item">
+                                <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/img.png)"></div>
+                                <div class="content">
+                                    <p>Development</p>
+                                    <h4>e-Payment</h4>
+                                </div>
+                                <div class="circle"></div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
                     </div>
-                </div>
+                    <div class="col-md-6">
+                        <div class="container-holder">
+                            <a href="#" class="grid__item">
+                                <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/img.png)"></div>
+                                <div class="content">
+                                    <p>Development</p>
+                                    <h4>e-Payment</h4>
+                                </div>
+                                <div class="circle"></div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-holder">
+                            <a href="#" class="grid__item">
+                                <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/img.png)"></div>
+                                <div class="content">
+                                    <p>Development</p>
+                                    <h4>e-Payment</h4>
+                                </div>
+                                <div class="circle"></div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 visit">
+                        <div class="container-holder">
+                            <div class="title-section">
+                                <h2 class="title">Hmmm...</h2>
+                                <a href="#">Visit our work /</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="container-holder">
+                            <a href="#" class="grid__item">
+                                <div class="grid__item-img grid__item-img--blur" style="background-image: url(img/img.png)"></div>
+                                <div class="content">
+                                    <p>Development</p>
+                                    <h4>e-Payment</h4>
+                                </div>
+                                <div class="circle"></div>
+                                <div class="arrow"></div>
+                            </a>
+                        </div>
+                    </div>
 
-            </div><!-- .row -->
-        </div><!-- .container -->
-    </section><!-- #our-work -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </section><!-- #our-work -->
 
-    <footer id="footer-home">
-        <div class="container">
-            <div class="row">
+        <footer id="footer-home" data-midnight="black">
+            <div class="container">
+                <div class="row">
 
-                <div class="col-md-4">
-                    <p class="menu-title">Menu</p>
-                    <ul class="unstyled">
-                        <li><a href="#">Capabilities</a></li>
-                        <li><a href="#">Our work</a></li>
-                        <li><a href="#">About us</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="menu-title">Social</p>
-                    <ul class="unstyled">
-                        <li><a href="#">Facebook</a></li>
-                        <li><a href="#">Instagram</a></li>
-                        <li><a href="#">Linkedin</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-4">
-                    <p class="menu-title">Contact</p>
-                    <ul class="unstyled contact">
-                        <li>kontakt@nerdycreative.ch</li>
-                        <li>+383 (0) 11 123 456</li>
-                        <li>© 2020, Nerdy Creative LLC.</li>
-                    </ul>
-                </div>
+                    <div class="col-md-4">
+                        <p class="menu-title">Menu</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Capabilities</a></li>
+                            <li><a href="#">Our work</a></li>
+                            <li><a href="#">About us</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="menu-title">Social</p>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Facebook</a></li>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedin</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <p class="menu-title">Contact</p>
+                        <ul class="list-unstyled contact">
+                            <li>kontakt@nerdycreative.ch</li>
+                            <li>+383 (0) 11 123 456</li>
+                            <li>© 2020, Nerdy Creative LLC.</li>
+                        </ul>
+                    </div>
 
+                </div>
             </div>
-        </div>
-    </footer>
-
-    <!-- BLUR Effect -->
+        </footer>
+    </div>
+    
+    <!-- BLUR EFFECT -->
     <script src="js/nearby.js"></script>
     <script src="js/site.js"></script>
+    
+    <!-- LUXY SMOOTH SCROLL JavaScript -->
+    <script src="js/luxy.js" charset="utf-8"></script>
 
+    
     <!-- jQUERY -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- POPPER CORE JavaScript -->
@@ -237,11 +258,13 @@
     <!-- BOOTSTRAP CORE JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <!-- MAIN JavaScript -->
+    <script src="js/midnight.jquery.min.js"></script>
     <script>
         $(document).ready(function () {
 
             $('#sidebarCollapse').on('click', function () {
-                $('#sidebar').toggleClass('active');
+                $('#sidebar').toggleClass('closed');
+                $('#luxy').toggleClass('push');
             });
 
             var swiper = new Swiper('.swiper-container', {
@@ -255,7 +278,23 @@
                 },
             });
 
+            // Change this to the correct selector.
+            $('#sidebarCollapse').midnight();
+
         });
+
+        luxy.init({
+			wrapper: '#luxy',
+			wrapperSpeed:  0.08
+        });
+        
+        var rangeslider = document.getElementById("sliderRange"); 
+        var output = document.getElementById("demo"); 
+        output.innerHTML = rangeslider.value; 
+        
+        rangeslider.oninput = function() { 
+            output.innerHTML = this.value; 
+        } 
     </script>
 </body>
 
