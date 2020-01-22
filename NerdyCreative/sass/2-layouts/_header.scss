@@ -32,24 +32,8 @@
         }
 
         .logo-circle {
-            
-            &-small {
-                @include logo-circle;
-                width: 453px;
-                height: 453px;
-                top: -223px;
-                left: -176px;
-                background-color: $primary-color; 
-            }
-
-            &-big {
-                @include logo-circle;
-                width: 1250px;
-                top: -624px;
-                left: -597px;
-                height: 1250px;
-                border: solid 1px rgba(16, 16, 16, 0.1);
-            }
+            position: absolute;
+            left: -244px;
         }
 
         // Logo 

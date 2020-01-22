@@ -133,22 +133,9 @@ footer {
       background: url("../icons/arrow-black.svg") no-repeat;
       top: -17px;
       left: 14px; }
-  #header-home .logo-circle-small {
+  #header-home .logo-circle {
     position: absolute;
-    border-radius: 50%;
-    width: 453px;
-    height: 453px;
-    top: -223px;
-    left: -176px;
-    background-color: #2b055d; }
-  #header-home .logo-circle-big {
-    position: absolute;
-    border-radius: 50%;
-    width: 1250px;
-    top: -624px;
-    left: -597px;
-    height: 1250px;
-    border: solid 1px rgba(16, 16, 16, 0.1); }
+    left: -244px; }
   #header-home .header-logo {
     position: absolute;
     top: 90px; }
@@ -235,7 +222,8 @@ footer {
 
 /* ---------- 03.MODULES STYLE ---------- */
 #capabilities-section {
-  padding: 250px 0; }
+  padding: 250px 0 600px;
+  position: relative; }
   #capabilities-section .title-section .title {
     font-size: 81px;
     font-weight: bold;
@@ -261,6 +249,9 @@ footer {
     #capabilities-section .swiper-wrapper .swiper-slide {
       max-width: 430px;
       margin-right: 105px; }
+      #capabilities-section .swiper-wrapper .swiper-slide:last-of-type {
+        max-width: 100px;
+        margin-right: 0; }
       #capabilities-section .swiper-wrapper .swiper-slide p {
         line-height: 1.48;
         font-size: 21px;
@@ -277,20 +268,13 @@ footer {
           font-weight: bold;
           color: rgba(255, 255, 255, 0);
           -webkit-text-stroke-width: 2px; }
-  #capabilities-section .divider {
-    width: 402px;
-    height: 200px;
-    background-color: #2b055d;
-    left: 50%;
+  #capabilities-section .circles {
     position: absolute;
-    z-index: 1; }
-  #capabilities-section .circle-half {
-    position: relative;
-    width: 402px;
-    height: 402px;
-    background-color: #280459;
-    border-radius: 50%;
-    left: 50%; }
+    top: 444px; }
+    #capabilities-section .circles .circle-half {
+      position: relative;
+      left: -201px;
+      margin-top: 150px; }
 
 #our-work {
   padding-bottom: 150px; }
@@ -363,5 +347,90 @@ footer {
 
 .midnightHeader.white {
   filter: invert(100%); }
+
+.container-custom {
+  padding-left: 15px;
+  padding-right: 15px; }
+
+@media (min-width: 576px) {
+  .container-custom {
+    margin-right: 0 !important;
+    margin-left: calc(50vw - 270px) !important; } }
+@media (min-width: 768px) {
+  .container-custom {
+    margin-right: 0 !important;
+    margin-left: calc(50vw - 300px) !important; } }
+@media (min-width: 992px) {
+  .container-custom {
+    margin-right: 0 !important;
+    margin-left: calc(50vw - 400px) !important; }
+
+  .swiper-slide:last-of-type {
+    max-width: 200px !important; } }
+@media (min-width: 1200px) {
+  .container-custom {
+    margin-right: 0 !important;
+    margin-left: calc(50vw - 475px) !important;
+    padding-left: 7px;
+    padding-right: 7px; } }
+/*THUMB*/
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input[type='range'] {
+    overflow: hidden;
+    outline: none;
+    width: 150px;
+    height: 5px;
+    -webkit-appearance: none;
+    background-color: rgba(0, 219, 176, 0.25);
+    margin-top: 150px; }
+
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 5px;
+    -webkit-appearance: none;
+    color: rgba(0, 219, 176, 0.25);
+    margin-top: -1px; }
+
+  input[type='range']::-webkit-slider-thumb {
+    width: 30px;
+    -webkit-appearance: none;
+    height: 30px;
+    border-radius: 100%;
+    cursor: pointer;
+    background: #00dbb0;
+    box-shadow: -150px 0 0 150px  #00dbb0; } }
+/** FF*/
+input[type="range"]::-moz-range-progress {
+  background-color: #00dbb0; }
+
+input[type="range"]::-moz-range-track {
+  background-color: rgba(0, 219, 176, 0.25); }
+
+/* IE*/
+input[type="range"]::-ms-fill-lower {
+  background-color: #00dbb0; }
+
+input[type="range"]::-ms-fill-upper {
+  background-color: rgba(0, 219, 176, 0.25); }
+
+.rangeslider:hover input[type="range"]::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #00dbb0;
+  border-radius: 50%;
+  margin-top: -12px;
+  background: #00dbb0; }
+
+.swiper-pagination {
+  width: 150px;
+  height: 4px;
+  border-radius: 3px;
+  background-color: transparent;
+  margin-top: -10px;
+  z-index: -1; }
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+  background-color: #00dbb0 !important;
+  border-radius: 3px;
+  height: 5px; }
 
 /*# sourceMappingURL=style.css.map */

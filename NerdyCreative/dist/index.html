@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>WEBSITE</title>
     <!-- FAVICON -->
-    <link rel="icon" type="image/png" href="img/.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="img/logo.png" sizes="16x16">
     <!-- BOOTSTRAP CORE CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
     <!-- GOOGLE FONTS CSS -->
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+    <!-- <link rel="stylesheet" href="css/rangeslider.css"> -->
 
     <!-- CUSTOM CSS -->
     <link href="css/style.css" rel="stylesheet">
@@ -53,8 +53,9 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-10 offset-md-1">
-                        <div class="logo-circle-small"></div>
-                        <div class="logo-circle-big"></div>
+                        <img src="icons/shape-double.svg" alt="" class="logo-circle" >
+                        <!-- <div class="logo-circle-small"></div>
+                        <div class="logo-circle-big"></div> -->
                         <div class="header-logo">
                             <img src="icons/logo.svg" alt="logo" class="logo">
                         </div> 
@@ -83,47 +84,57 @@
                 </div><!-- .row -->
             </div><!-- .container -->
             <div class="swiper-container">
-                <div class="swiper-wrapper">
+                <div class="swiper-wrapper container-custom" id="swipeEl">
                     
                     <div class="swiper-slide">
-                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p class="subtitle">Branding 1 <span class="outlined-dot">.</span></p>
                         <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
                     </div>
                     <div class="swiper-slide">
-                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p class="subtitle">Branding 2 <span class="outlined-dot">.</span></p>
                         <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
                     </div>
                     <div class="swiper-slide">
-                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p class="subtitle">Branding 3 <span class="outlined-dot">.</span></p>
                         <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
                     </div>
                     <div class="swiper-slide">
-                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p class="subtitle">Branding 4 <span class="outlined-dot">.</span></p>
                         <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
                     </div>
                     <div class="swiper-slide">
-                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p class="subtitle">Branding 5 <span class="outlined-dot">.</span></p>
                         <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
                     </div>
                     <div class="swiper-slide">
-                        <p class="subtitle">Branding <span class="outlined-dot">.</span></p>
+                        <p class="subtitle">Branding 6 <span class="outlined-dot">.</span></p>
                         <p>Lorem ipsum dolor sit amet, tale diceret sensibus sit te, graeco salutandi eu eos. Legere ancillae ei eum. Ei cibo gloriatur conclusionemque pri, ne suas interpretaris eum.</p>
                     </div>
-                    
+                    <div class="swiper-slide">
+                    </div>
+
                 </div><!-- .swiper-wrapper -->
             </div><!-- .swiper-container -->
-            <div class="divider"></div>
-            <div class="circle-half"></div>
+            <!-- <input type="range" class="rangeslider"/> -->
+            <!-- <div class="divider"></div>
+            <div class="circle-half"></div> -->
+            <div class="circles">
+                <img src="icons/shape.svg" alt="" class="circle-empty-big">
+                <img src="icons/circle-half.svg" alt="" class="circle-half">
+            </div>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-10 offset-md-1">
                         <div class="rangeslider"> 
-                            <input type="range" min="1" max="100" value="10" class="myslider" id="sliderRange"> 
-                            <p>Value: <span id="demo"></span></p> 
-                          </div>
+                            <input type="range" min="0" max="143" value="0" class="myslider" id="sliderRange"> 
+                        </div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
+
+            <!-- <input type="range" min="0" max="100" step="10" > -->
+            
         </section><!-- #capabilities-section -->
 
         <section id="our-work" data-midnight="white">
@@ -250,7 +261,6 @@
     <!-- LUXY SMOOTH SCROLL JavaScript -->
     <script src="js/luxy.js" charset="utf-8"></script>
 
-    
     <!-- jQUERY -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <!-- POPPER CORE JavaScript -->
@@ -259,6 +269,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
     <!-- MAIN JavaScript -->
     <script src="js/midnight.jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+
+    <!-- <script src="js/rangeslider.js"></script> -->
     <script>
         $(document).ready(function () {
 
@@ -269,18 +284,31 @@
 
             var swiper = new Swiper('.swiper-container', {
                 slidesPerView: 4,
-                centeredSlides: true,
                 loop: false,
                 slidesPerView: "auto",
                 freeMode: true,
                 mousewheel: {
                     releaseOnEdges: true,
                 },
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'progressbar',
+                }
+            });
+            swiper.on('slideChange', function () {
+                $("#swipeEl").css("left", 0); 
             });
 
             // Change this to the correct selector.
             $('#sidebarCollapse').midnight();
 
+
+
+            // var rangeslide = new RangeSlider($("#range"), {
+            //     size: 150,
+            //     borderSize: 0.4,
+            //     percentage: 100,
+            // });
         });
 
         luxy.init({
@@ -288,13 +316,21 @@
 			wrapperSpeed:  0.08
         });
         
+
         var rangeslider = document.getElementById("sliderRange"); 
-        var output = document.getElementById("demo"); 
-        output.innerHTML = rangeslider.value; 
+        var currentVal = rangeslider.value;
+        var slide = returnPercentage((currentVal)*(-1));
+        $("#swipeEl").css("left", slide); 
         
-        rangeslider.oninput = function() { 
-            output.innerHTML = this.value; 
+        rangeslider.oninput = function() {
+            $("#swipeEl").css("transform", "translate3d(0px, 0px, 0px)");
+            var slideAgain = returnPercentage((this.value)*(-1));
+            $("#swipeEl").css("left", slideAgain); 
         } 
+
+        function returnPercentage(value) {
+            return value + '%';
+        };
     </script>
 </body>
 
