@@ -111,28 +111,30 @@ footer {
 #header-home {
   height: 100vh;
   background-color: #fff; }
-  #header-home .scroll {
+  #header-home #scroll {
     position: absolute;
     margin-top: 150px;
-    display: flex; }
-    #header-home .scroll p {
+    display: flex;
+    background-color: transparent;
+    border: 0; }
+    #header-home #scroll .p {
       text-transform: uppercase;
       font-size: 13px;
       letter-spacing: 1px;
       color: #141414;
       margin: auto; }
-    #header-home .scroll .circle {
+    #header-home #scroll .circle {
       width: 35px;
       height: 35px;
       background: url("../icons/box.svg") no-repeat;
       margin-right: 15px; }
-    #header-home .scroll .arrow {
+    #header-home #scroll .arrow {
       width: 10px;
       height: 38px;
       position: absolute;
       background: url("../icons/arrow-black.svg") no-repeat;
-      top: -17px;
-      left: 14px; }
+      bottom: 16px;
+      left: 19px; }
   #header-home .logo-circle {
     position: absolute;
     left: -244px; }
@@ -168,14 +170,17 @@ footer {
   z-index: 1999; }
   .wrapper#sidebar-wrapper #content {
     margin: auto; }
-    .wrapper#sidebar-wrapper #content #sidebarCollapse {
-      height: 25px;
-      background: url("../icons/menu.svg") no-repeat;
-      border: 0;
-      border-radius: 0;
-      position: relative !important; }
-      .wrapper#sidebar-wrapper #content #sidebarCollapse:focus, .wrapper#sidebar-wrapper #content #sidebarCollapse:active {
-        box-shadow: none; }
+  .wrapper#sidebar-wrapper .navbar-expand-lg {
+    top: 50% !important;
+    left: 15px !important; }
+  .wrapper#sidebar-wrapper #sidebarCollapse {
+    height: 25px;
+    background: url("../icons/menu.svg") no-repeat;
+    border: 0;
+    border-radius: 0;
+    position: relative !important; }
+    .wrapper#sidebar-wrapper #sidebarCollapse:focus, .wrapper#sidebar-wrapper #sidebarCollapse:active {
+      box-shadow: none; }
   .wrapper#sidebar-wrapper #sidebar.closed {
     margin-left: -250px; }
   .wrapper#sidebar-wrapper #sidebar {
@@ -432,5 +437,9 @@ input[type="range"]::-ms-fill-upper {
   background-color: #00dbb0 !important;
   border-radius: 3px;
   height: 5px; }
+
+.sidebarCollapse.blue {
+  background: blue;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */

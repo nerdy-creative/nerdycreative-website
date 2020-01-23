@@ -38,13 +38,9 @@
                 </li>
             </ul>
         </nav>
-        <div id="content">
-            <nav class="navbar navbar-expand-lg">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn btn-info"></button>
-                </div>
-            </nav>
-        </div><!-- #sidebar -->
+        <nav class="navbar navbar-expand-lg">
+            <button type="button" id="sidebarCollapse" class="btn"></button>
+        </nav>
     </div><!-- .wrapper#sidebar-wrapper -->
     <div id="luxy">
         
@@ -61,11 +57,11 @@
                         </div> 
                         <div class="header-content">
                             <p>Hello, we’re <span class="company-name">nerdy</span> digital design & dev agency<span class="outlined-dot">.</span></p>
-                            <div class="scroll">
-                                <div class="circle"></div>
-                                <div class="arrow"></div>
-                                <p>Scroll as a geek</p>
-                            </div>
+                            <button id="scroll" type="button">
+                                <span class="circle"></span>
+                                <span class="arrow"></span>
+                                <span class="p">Scroll as a geek</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -275,8 +271,15 @@
 
     <!-- <script src="js/rangeslider.js"></script> -->
     <script>
-        $(document).ready(function () {
+        $(document).ready(function () {   
+            
+            // Smooth scroll
+            luxy.init({
+                wrapper: '#luxy',
+                wrapperSpeed:  0.08
+            });
 
+            // Open/close sidebar
             $('#sidebarCollapse').on('click', function () {
                 $('#sidebar').toggleClass('closed');
                 $('#luxy').toggleClass('push');
@@ -295,28 +298,24 @@
                     type: 'progressbar',
                 }
             });
+
             swiper.on('slideChange', function () {
                 $("#swipeEl").css("left", 0); 
             });
 
-            // Change this to the correct selector.
-            $('#sidebarCollapse').midnight();
+            // Change menu color on scroll
+            $('.navbar-expand-lg').midnight();
 
-
-
-            // var rangeslide = new RangeSlider($("#range"), {
-            //     size: 150,
-            //     borderSize: 0.4,
-            //     percentage: 100,
-            // });
+            $(function() {
+                $('#scroll').click (function() {
+                    $('html, body').animate({scrollTop: $('section.ok').offset().top }, 'slow');
+                    return false;
+                });
+            });
         });
 
-        luxy.init({
-			wrapper: '#luxy',
-			wrapperSpeed:  0.08
-        });
         
-
+        // Range slider
         var rangeslider = document.getElementById("sliderRange"); 
         var currentVal = rangeslider.value;
         var slide = returnPercentage((currentVal)*(-1));

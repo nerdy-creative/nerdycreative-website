@@ -7,19 +7,23 @@
     z-index: 1999;
 
     #content {
-        margin: auto;
+        margin: auto;   
+    }
 
-        #sidebarCollapse {
-            height: 25px;
-            background: url("../icons/menu.svg") no-repeat;
-            border: 0;
-            border-radius: 0;
-            position: relative !important;
+    .navbar-expand-lg {
+        top: 50% !important;
+        left: 15px !important;
+    }
+    #sidebarCollapse {
+        height: 25px;
+        background: url("../icons/menu.svg") no-repeat;
+        border: 0;
+        border-radius: 0;
+        position: relative !important;
 
-            &:focus, 
-            &:active {
-                box-shadow: none;
-            }
+        &:focus, 
+        &:active {
+            box-shadow: none;
         }
     }
 
